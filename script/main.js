@@ -1,6 +1,8 @@
 const leftMenu = document.querySelector('.left-menu');
 const hamburger = document.querySelector('.hamburger');
 
+const tvCardImg = document.querySelector('.tv-card__img')
+
 hamburger.addEventListener('click', () => {
 	leftMenu.classList.toggle('openMenu');
 	hamburger.classList.toggle('open');
@@ -21,5 +23,16 @@ leftMenu.addEventListener('click', () => {
   	leftMenu.classList.add('openMenu');
   	hamburger.classList.add('open');
   }
+
   
+});
+
+tvCardImg.addEventListener('mouseover', () =>{
+  tvCardImg.hidden = true;
+
+});
+
+tvCardImg.addEventListener('mouseout', () =>{
+  tvCardImg.hidden = false;
+
 });
